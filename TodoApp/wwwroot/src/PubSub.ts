@@ -23,8 +23,8 @@ class PubSub {
     }
     
     unsubscribe (topic: string, token: string) {
-      if(!token) delete this.subscriptions[topic]; // Delete all subscriptions for the topic
-      this.subscriptions[topic] && (delete this.subscriptions[topic][token]); // Delete specific subscription
+      if(!token) delete this.subscriptions[topic];
+      this.subscriptions[topic] && (delete this.subscriptions[topic][token]);
     }
   }
   

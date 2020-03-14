@@ -1,11 +1,19 @@
 {
+    "name": "technical-challenge",
+    "version": "1.0.0",
+    "description": "Todo app using Typescript, Hyperscript, pub/sub, dotnet core web api, and SQLite",
+    "license": "ISC",
+    "main": "src/app.js",
     "scripts": {
         "build": "rm -f dist/* && tsc && browserify dist/app.js -o dist/bundle.js"
     },
     "dependencies": {
         "@types/hyperscript": "0.0.3",
         "hyperscript": "^2.0.2",
-        "hyperscript-helpers": "^3.0.3",
-        "ts-hyperscript-helpers": "^1.0.0"
+        "hyperscript-helpers": "^3.0.3"
+    },
+    "devDependencies": {
+        "browserify": "^16.5.0",
+        "typescript": "^3.8.3"
     }
 }

@@ -48,8 +48,7 @@ class Api {
             },
             body: JSON.stringify(item)
           })
-          .then(this.handleErrors)
-          //.then(response => response.json())           
+          .then(this.handleErrors)         
           .then(() => this.get())
           .catch(error => ps.publish(actions.API_ERROR, error));        
     }
@@ -58,8 +57,7 @@ class Api {
         fetch(this.uri.concat("/", id), {
             method: 'DELETE'
           })
-          .then(this.handleErrors)
-          //.then(response => response.json())           
+          .then(this.handleErrors)           
           .then(() => this.get())
           .catch(error => ps.publish(actions.API_ERROR, error));         
 

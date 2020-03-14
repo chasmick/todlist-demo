@@ -1,12 +1,12 @@
 # Todolist Demo Application
 
-Requirements: dotnet core, tsc
+Requirements: dotnet core
 
 Start the api server: <br/>
 dotnet run
 
 Prepare the client: <br/>
-cd TodoWebApi\wwwroot <br/>
+cd TodoApp/wwwroot <br/>
 npm install <br/>
 npm run build <br/>
 
@@ -15,7 +15,6 @@ Navigate to http://localhost:5000 to start building your task list!
 Server Notes:
 - API is a dotnet core Web API 
 - SQLite database for persistent storage
-- Server unit tests included
 
 Client Notes:
 - Written in Typescript

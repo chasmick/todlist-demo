@@ -23,6 +23,7 @@ export default class TodoList extends Component {
     setData (data: TodoItem[]) {
         this.items = data;
         this.loading = false;
+        this.todoInput.value = null;
         refresh(this);
     }
 
