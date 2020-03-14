@@ -3,6 +3,7 @@
 Requirements: dotnet core
 
 Start the api server: <br/>
+cd TodoApp
 dotnet run
 
 Prepare the client: <br/>
