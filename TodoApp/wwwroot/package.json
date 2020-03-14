@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "build": "rm -f dist/* && tsc && browserify dist/app.js -o dist/bundle.js"
+    },
+    "dependencies": {
+        "@types/hyperscript": "0.0.3",
+        "hyperscript": "^2.0.2",
+        "hyperscript-helpers": "^3.0.3",
+        "ts-hyperscript-helpers": "^1.0.0"
+    }
+}

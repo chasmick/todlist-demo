@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+   font-family:
+  'Segoe UI';
+   line-height: 1.4;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+    overflow-y: auto;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;    
+  }
+  
+  .app-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 80px;
+    opacity: 0.5;
+  }
+  
+  .todo-list {
+    list-style: none;
+    margin-bottom: 20px;
+    width:90%;
+  }
+  
+  .todo-item {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .todo-item label {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 26px;
+  }
+  
+  label.done {
+    text-decoration: line-through;
+  }
+  
+  .checkbox {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox::before {
+    content: '✓';
+    font-size: 20px;
+    display: none;
+  }
+  
+  .done .checkbox::before {
+    display: inline;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #333;
+    border-right: 0;
+    margin-bottom:10px;
+    float:left;
+  }
+
+button {    
+    border: none;
+    color: white;
+    padding: 8px 25px 9px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .input-area::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.btn-add {
+   background-color: #4CAF50;
+   border: 2px solid #333;
+   border-left: 0;
+   float:left;
+ } 
+
+.btn-remove {
+  background-color: #f44336; 
+  padding: 4px 14px;}
+
+.error {color: #f44336;}
