@@ -22,7 +22,7 @@ export function mount(temp: typeof Component, props: any) {
     return o.node;
 }
 
-export function refresh(o: Component, props: any) {
+export function refresh(o: Component) {
     var newNode = o.view();    
     if(!newNode) newNode = document.createElement('div');
     o.node && o.node.parentNode && o.node.parentNode.replaceChild(newNode, o.node);

@@ -23,7 +23,7 @@ export default class ApiError extends Component {
 
     setError(err: any) {
         (err instanceof Error) ? this.error = err : this.error = null;
-        refresh(this, null);
+        refresh(this);
     }    
 
 }

@@ -23,7 +23,7 @@ export default class TodoList extends Component {
     setData (data: TodoItem[]) {
         this.items = data;
         this.loading = false;
-        refresh(this, null);
+        refresh(this);
     }
 
     todoInput = input(
@@ -88,6 +88,6 @@ export default class TodoList extends Component {
 
     setLoading (loading: boolean) {
         this.loading = loading;
-        refresh(this, null);
+        refresh(this);
     }
 }
