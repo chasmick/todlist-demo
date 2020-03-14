@@ -2,13 +2,13 @@
 
 Requirements: dotnet core, tsc
 
-Start the api server:
+Start the api server: <br/>
 dotnet run
 
-Prepare the client:
-cd TodoWebApi\wwwroot
-npm install
-npm run build
+Prepare the client: <br/>
+cd TodoWebApi\wwwroot <br/>
+npm install <br/>
+npm run build <br/>
 
 Navigate to http://localhost:5000 to start building your task list!
 
